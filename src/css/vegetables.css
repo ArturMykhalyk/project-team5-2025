@@ -1,3 +1,112 @@
 .vegetables {
-    color: #576F35;
+    background: #7a3145;
+}
+
+.vegetables-title {
+    font-weight: 600;
+font-size: 48px;
+line-height: 1.083;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: #fbfbfb;
+margin-bottom: 20px;
+}
+
+.color-vegetables{
+    color: #d4bfc4;
+}
+
+.vegetables-text {
+font-size: 14px;
+line-height: 1.42;
+color: #fbfbfb;
+margin-bottom: 40px;
+}
+
+.vegetables-head {
+font-weight: 600;
+font-size: 28px;
+line-height: 1;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: #7a3145;
+margin-bottom: 12px;
+}
+
+.text-vegetables {
+font-size: 14px;
+line-height: 1.42;
+margin-bottom: 12px;
+}
+
+.vegetables-div{
+border-radius: 40px;
+padding: 32px 24px;
+max-width: 335px;
+background: #fbfbfb;
+}
+
+.vegetables-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+@media only screen and ( max-width: 360px){
+    .vegetables-title{
+        font-size: 40px;
+    }  
+}
+
+@media only screen and ( min-width: 768px){
+    .vegetables-title{
+        font-size: 64px;
+        line-height: 1;
+        width: 628px;
+        margin-bottom: 24px;
+    }
+
+    .vegetables-div{
+        padding: 32px 30px;
+    }
+
+    .vegetables-text{
+        font-size: 16px;
+        line-height: 1.25;
+        width: 628px;
+        margin-bottom: 52px;
+    }
+
+    .vegetables-head{
+        font-size: 32px;
+    }
+
+    .text-vegetables{
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    .vegetables-list{
+        gap: 28px 24px;
+    }
+}
+
+@media only screen and ( min-width: 1280px){
+    .vegetables-title{
+        font-size: 64px;
+        width: 508px;
+    }
+
+    .vegetables-div{
+        padding: 32px 32px;
+    }
+
+    .text-vegetables{
+        margin-bottom: 8px;
+    }
+
+    .vegetables-img{
+        height: 244px;
+    }
 }
