@@ -25,7 +25,7 @@
     />
 
     <script type="module" crossorigin src="/project-team5-2025/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-team5-2025/assets/index-WQaDGnmn.css">
+    <link rel="stylesheet" crossorigin href="/project-team5-2025/assets/index-B7zIVmaw.css">
   </head>
   <body>
     <header class="header">
@@ -322,15 +322,16 @@
         </h3>
         <div class="input">
           <form class="your-order-form">
-            <input type="text" class="your-order-input your-order-input-name" name="user-name" pattern="^[A-Za-z\s-]{3,}$" title="The name must contain at least 3 letters!" placeholder="Full Name" required id="user-name">
+            <input type="text" class="your-order-input your-order-input-name" name="user-name" placeholder="Full Name" minlength="3" required="user-name">
             <p class="text-valid-name">Succes!</p>
             <p class="text-invalid-name">The name must contain at least 3 letters!</p>
             <input type="email" class="your-order-input your-order-input-email" name="user-email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="Email" required id="user-email">
             <p class="text-valid-email">Succes!</p>
             <p class="text-invalid-email">Invalid email, try again</p>
             <textarea class="your-order-textarea" name="user-comment" id="user-comment" pattern="^[A-Za-z\s-]{1,}$" placeholder="Comment"></textarea>
-           </form>
-           <button class="your-order-block-btn" type="submit">send</button>
+            <button class="your-order-block-btn" type="submit">send</button>
+          </form>
+
         </div>
       </div>
       <div class="soc">
