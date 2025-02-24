@@ -25,7 +25,7 @@
     />
 
     <script type="module" crossorigin src="/project-team5-2025/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-team5-2025/assets/index-C0a9QpzA.css">
+    <link rel="stylesheet" crossorigin href="/project-team5-2025/assets/index-dZnf1xZz.css">
   </head>
   <body>
     <header class="header">
@@ -47,7 +47,7 @@
           <a class="link-menu" href="">Reviews</a>
         </li>
       </ul>
-      <button class="btn-menu" type="button">Shop now</button>
+      <button id="openModal" class="btn-menu" type="button">Shop now</button>
     </nav>
 
     <button class="burger-btn" type="button" data-menu-open>
@@ -76,7 +76,9 @@
             <a class="link-menu" href="">Reviews</a>
           </li>
         </ul>
-        <button class="btn-menu" type="button">Shop now</button>
+        <button id="openModalmobile" class="btn-menu" type="button">
+          Shop now
+        </button>
       </nav>
     </div>
   </div>
@@ -382,6 +384,17 @@
     </div>
   </div>
 </footer>
+    <div id="modal" class="modal">
+  <div class="modal-content">
+    <!-- Кнопка закриття -->
+    <button id="closeModal" class="close-btn">
+      <svg class="modal-icons-close" width="20" height="20">
+        <use href="/project-team5-2025/assets/sprite-DZYqFPwd.svg#icon-exit"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
 
   </body>
 </html>
