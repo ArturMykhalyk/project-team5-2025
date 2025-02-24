@@ -53,10 +53,67 @@ background: #fbfbfb;
     gap: 20px;
 }
 
+.rotat-all{
+    position: relative;
+    width: 80vw; /* 50% ширини вікна перегляду */
+    max-width: 280px; /* Максимальний розмір */
+    max-height: 240px;
+    aspect-ratio: 1 / 2; 
+    /* width: 280px;
+    height: 240px; */
+    perspective: 1000px;
+}
+
+.rotating-element{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: spin 8s linear infinite;
+}
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.front {
+    background: url("https://via.placeholder.com/200") no-repeat center/cover;
+}
+
+.back{
+    background: #ff5733;
+    transform: rotateY(180deg); 
+    color: white;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
 @media only screen and ( max-width: 330px){
     .vegetables-title{
         font-size: 44px;
     }  
+
+    .rotat-all{
+    width: 90vw; /* Збільшуємо для маленьких екранів */
+    max-width: 225px;
+    max-height: 192.85px;
+    }
 }
 
 @media only screen and ( min-width: 768px){
@@ -110,5 +167,9 @@ background: #fbfbfb;
 
     .vegetables-img{
         height: 244px;
+    }
+
+    .rotat-all{
+        max-height: 244px;
     }
 }
