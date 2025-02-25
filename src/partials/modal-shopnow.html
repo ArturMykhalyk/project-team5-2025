@@ -14,14 +14,16 @@
       </h2>
 
       <!-- Форма -->
-
-      <div class="forma">
+      <div class="forma" data-shopnow-form>
         <form class="modal-form">
           <label class="label-forma">
             <input
               class="modal-form-input"
               type="text"
-              placeholder="Name"
+              placeholder="Full Name"
+              id="user-name-shopnow"
+              name="user-name-shopnow"
+              minlength="3"
               required
             />
           </label>
@@ -29,7 +31,10 @@
             <input
               class="modal-form-input"
               type="email"
+              name="user-email-shopnow"
+              pattern="(?:[^\s@]*)[\w]{1}@{1}(?:[^\s@]+)[\.]{1}(?:[^\s@]{1,255}\w{1})"
               placeholder="Email"
+              id="user-email-shopnow"
               required
             />
           </label>
@@ -37,6 +42,8 @@
             <textarea
               class="modal-form-textarea"
               placeholder="Comment"
+              name="user-comment-shopnow"
+              id="user-comment"
             ></textarea>
           </label>
         </form>
