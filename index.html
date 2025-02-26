@@ -25,7 +25,7 @@
     />
 
     <script type="module" crossorigin src="/project-team5-2025/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-team5-2025/assets/index-CZDpK6W_.css">
+    <link rel="stylesheet" crossorigin href="/project-team5-2025/assets/index-C5PH_O8O.css">
   </head>
   <body>
     <header class="header animated">
@@ -357,24 +357,33 @@
     </div>
     <div class="your-order-section">
       <div class="your-order-block">
-        <h3 class="your-order-block-title">Ordering 
+        <p class="your-order-block-title">Ordering 
           <span class="block-title-span-first">from us</span> 
           is quick and easy! Fill out 
           <span class="block-title-span-second">the form</span> 
           below and we will contact you !
-        </h3>
+        </p>
         <div class="input">
           <form class="your-order-form" autocomplete="off" data-order-form>
-            <input type="text" class="your-order-input your-order-input-name" name="user-name" placeholder="Full Name"
-              minlength="3" required id="user-name">
-            <p class="text-valid-name">Succes!</p>
-            <p class="text-invalid-name">The name must contain at least 3 letters!</p>
-            <input type="email" class="your-order-input your-order-input-email" name="user-email"
-              pattern="(?:[^\s@]*)[\w]{1}@{1}(?:[^\s@]+)[\.]{1}(?:[^\s@]{1,255}\w{1})" placeholder="Email" required
-              id="user-email">
-            <p class="text-valid-email">Succes!</p>
-            <p class="text-invalid-email">Invalid email, try again</p>
-            <textarea class="your-order-textarea" name="user-comment" id="user-comment" placeholder="Comment"></textarea>
+            <div class="label-for-name">
+              <label for="user-name" class="modal-label visually-hidden">Name</label>
+              <input type="text" class="your-order-input your-order-input-name" name="user-name" placeholder="Full Name"
+                minlength="3" required id="user-name">
+              <p class="text-valid-name">Succes!</p>
+              <p class="text-invalid-name">The name must contain at least 3 letters!</p>
+            </div>
+            <div class="label-for-email">
+              <label for="user-email" class="modal-label visually-hidden">Email</label>
+              <input type="email" class="your-order-input your-order-input-email" name="user-email"
+                pattern="(?:[^\s@]*)[\w]{1}@{1}(?:[^\s@]+)[\.]{1}(?:[^\s@]{1,255}\w{1})" placeholder="Email" required
+                id="user-email">
+              <p class="text-valid-email">Succes!</p>
+              <p class="text-invalid-email">Invalid email, try again</p>
+            </div>
+            <div class="label-for-textarea">
+              <label for="user-comment" class="modal-label visually-hidden">Email</label>
+              <textarea class="your-order-textarea" name="user-comment" id="user-comment" placeholder="Comment"></textarea>
+            </div>
             <button class="your-order-block-btn" type="submit" data-order-open>Send</button>
           </form>
         </div>
@@ -478,8 +487,7 @@
       </p>
 
       <!-- Форма -->
-
-      <div class="forma">
+      <div class="forma" data-shopnow-form>
         <form class="modal-form">
           <label class="label-forma" for="name">
             <span class="visually-hidden">name</span>
@@ -503,18 +511,19 @@
             required
           />
 
-          <label class="label-forma">
+          <label class="label-forma" for="user-comment-shopnow">
             <span class="visually-hidden">comment</span>
             <textarea
               class="modal-form-textarea"
               placeholder="Comment"
+              name="user-comment-shopnow"
+              id="user-comment-shopnow"
             ></textarea>
           </label>
 
           <!-- Овочеві картки (радіо-кнопки) -->
           <div class="modal-vegetables">
             <div class="card">
-              <span class="visually-hidden">mushrooms </span>
               <input
                 aria-label="mushrooms"
                 type="radio"
@@ -532,7 +541,6 @@
             </div>
 
             <div class="card">
-              <span class="visually-hidden">leek </span>
               <input
                 aria-label="leek"
                 type="radio"
@@ -550,7 +558,6 @@
             </div>
 
             <div class="card">
-              <span class="visually-hidden">carrot</span>
               <input
                 aria-label="carrot"
                 type="radio"
