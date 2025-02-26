@@ -25,7 +25,7 @@
     />
 
     <script type="module" crossorigin src="/project-team5-2025/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-team5-2025/assets/index-CFLDFOX8.css">
+    <link rel="stylesheet" crossorigin href="/project-team5-2025/assets/index-CZDpK6W_.css">
   </head>
   <body>
     <header class="header animated">
@@ -471,78 +471,105 @@
       </svg>
     </button>
     <div class="modal-body">
-      <h2 class="modal-titel">
+      <p class="modal-titel">
         Ordering <span class="modal-titel-purpel">from us </span>is quick and
         easy! Fill out <span class="modal-titel-green">the form</span> below and
         we will contact you !
-      </h2>
+      </p>
 
       <!-- Форма -->
 
       <div class="forma">
         <form class="modal-form">
-          <label class="label-forma">
-            <input
-              class="modal-form-input"
-              type="text"
-              placeholder="Name"
-              required
-            />
+          <label class="label-forma" for="name">
+            <span class="visually-hidden">name</span>
           </label>
-          <label class="label-forma">
-            <input
-              class="modal-form-input"
-              type="email"
-              placeholder="Email"
-              required
-            />
+          <input
+            id="name"
+            class="modal-form-input"
+            type="text"
+            placeholder="Name"
+            required
+          />
+
+          <label class="label-forma" for="email">
+            <span class="visually-hidden">E-mail </span>
           </label>
+          <input
+            id="email"
+            class="modal-form-input"
+            type="email"
+            placeholder="E-mail"
+            required
+          />
+
           <label class="label-forma">
+            <span class="visually-hidden">comment</span>
             <textarea
               class="modal-form-textarea"
               placeholder="Comment"
             ></textarea>
           </label>
+
+          <!-- Овочеві картки (радіо-кнопки) -->
+          <div class="modal-vegetables">
+            <div class="card">
+              <span class="visually-hidden">mushrooms </span>
+              <input
+                aria-label="mushrooms"
+                type="radio"
+                name="product"
+                value="mushrooms"
+                class="card-radio"
+              />
+              <p class="card-vegetables-head">mushrooms</p>
+              <img
+                class="card-img"
+                src="/project-team5-2025/assets/mushrooms-Cumcr6dN.webp"
+                alt="mushrooms"
+              />
+              <p class="text-card-vegetebles">40 USD / kg</p>
+            </div>
+
+            <div class="card">
+              <span class="visually-hidden">leek </span>
+              <input
+                aria-label="leek"
+                type="radio"
+                name="product"
+                value="leek"
+                class="card-radio"
+              />
+              <p class="card-vegetables-head">leek</p>
+              <img
+                class="card-img"
+                src="/project-team5-2025/assets/leek-BGNKjNp8.webp"
+                alt="leek"
+              />
+              <p class="text-card-vegetebles">50 USD / kg</p>
+            </div>
+
+            <div class="card">
+              <span class="visually-hidden">carrot</span>
+              <input
+                aria-label="carrot"
+                type="radio"
+                name="product"
+                value="carrot"
+                class="card-radio"
+              />
+              <p class="card-vegetables-head">carrot</p>
+              <img
+                class="card-img"
+                src="/project-team5-2025/assets/carrot-Dk1-kuSx.webp"
+                alt="carrot"
+              />
+              <p class="text-card-vegetebles">40 USD / kg</p>
+            </div>
+          </div>
+
+          <button type="submit" class="submit-btn">Shop now</button>
         </form>
-
-        <button type="submit" class="submit-btn">shop now</button>
-      </div>
-    </div>
-    <!-- Овочеві картки -->
-    <div class="modal-vegetables">
-      <div class="card">
-        <h3 class="card-vegetables-head">mushrooms</h3>
-        <img
-          class="card-img vegetables-img"
-          srcset="/project-team5-2025/assets/mushrooms-Cumcr6dN.webp 1x, /project-team5-2025/assets/mushrooms-2x-QrF9yV2O.webp 2x"
-          src="/project-team5-2025/assets/mushrooms-Cumcr6dN.webp"
-          alt="mushrooms"
-        />
-
-        <p class="text-card-vegetebles">40 USD / kg</p>
-      </div>
-      <div class="card">
-        <h3 class="card-vegetables-head">leek</h3>
-        <img
-          class="card-img vegetables-img"
-          srcset="/project-team5-2025/assets/leek-BGNKjNp8.webp 1x, /project-team5-2025/assets/leek-2x-BJIWZvom.webp 2x"
-          src="/project-team5-2025/assets/leek-BGNKjNp8.webp"
-          alt="leek"
-        />
-
-        <p class="text-card-vegetebles">50 USD / kg</p>
-      </div>
-
-      <div class="card">
-        <h3 class="card-vegetables-head">carrot</h3>
-        <img
-          class="card-img vegetables-img"
-          srcset="/project-team5-2025/assets/carrot-Dk1-kuSx.webp 1x, /project-team5-2025/assets/carrot-2x-lQgQQhyy.webp 2x"
-          src="/project-team5-2025/assets/carrot-Dk1-kuSx.webp"
-          alt="carrot"
-        />
-
-        <p class="text-card-vegetebles">40 USD / kg</p>
       </div>
     </div>
   </div>
